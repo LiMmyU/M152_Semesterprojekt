@@ -24,7 +24,7 @@
             <form class="content-box__content" action="" method="POST" id="loginform">
                 <div class="login__header">
                     <h1 id="js-greeting-word">Hallo</h1>
-                    <h2>Anmelden </h2>
+                    <h2>Registrieren </h2>
                 </div>
                 <ul class="form-fields">
                     <li>
@@ -32,14 +32,17 @@
                         <input tabindex="1" type="text" id="username" name="username" required>
                     </li>
                     <li>
+                        <label class="label" for="username">Email:</label>
+                        <input tabindex="1" type="email" id="email" name="email" required>
+                    </li>
+                    <li>
                         <label class="label" for="password">Passwort:</label>
                         <input tabindex="2" type="password" id="password" name="password" maxlength="50" required>
                     </li>
                     <li>
-                        <button tabindex="3" type="submit" value="Login"><span>Login</span></button>                       
-                        <button tabindex="5" type="button" onclick="window.location.href='register.html'"><span>Registrieren</span></button>
+                        <label class="label" for="password">Passwort wiederholen:</label>
+                        <input tabindex="3" type="password" id="password" name="password" maxlength="50" required>
                     </li>
-                    <li><span>oder</span></li>
                     <li>
                         <div class="col">
                             <a href="#" class="fb btn">
@@ -49,6 +52,10 @@
                                 </i> Login mit Google+
                             </a>
                         </div>
+                    </li>
+                    <li>
+                        <button tabindex="4" type="button" onclick="window.location.href='login.html'"><span>Login</span></button>                        
+                        <button tabindex="5" type="submit" value="register"><span>Registrieren</span></button>
                     </li>
                 </ul>
             </form>
