@@ -5,7 +5,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <LINK REL=StyleSheet HREF="../css/styleLogin.css" TYPE="text/css" MEDIA=screen>
-    <title>Login</title>
+    <title>Registrieren</title>
 </head>
 
 <body>
@@ -17,11 +17,10 @@
             <a href="createPost.html">Eintrag erstellen</a>
         </div>
     </div>
-    <div>
-        <!-- BSP: https://app.create.net/login.phtml-->
+    <div class="container">
         <div class="content-box mb1">
 
-            <form class="content-box__content" action="" method="POST" id="loginform">
+            <form class="content-box__content" action="" method="POST" id="registerform">
                 <div class="login__header">
                     <h1 id="js-greeting-word">Hallo</h1>
                     <h2>Registrieren </h2>
@@ -44,12 +43,13 @@
                         <input tabindex="3" type="password" id="password" name="password" maxlength="50" required>
                     </li>
                     <li>
-                        <button tabindex="4" type="button" onclick="window.location.href='login.html'"><span>Login</span></button>                        
+                        <button tabindex="4" type="button"
+                            onclick="window.location.href='login.html'"><span>Login</span></button>
                         <button tabindex="5" type="submit" value="register"><span>Registrieren</span></button>
                     </li>
-                </li>
-                <li><span>oder</span></li>
-                <li>
+                    </li>
+                    <li><span>oder</span></li>
+                    <li>
                     <li>
                         <div class="col">
                             <a href="#" class="fb btn">
@@ -64,22 +64,6 @@
             </form>
 
         </div>
-        <script type="text/javascript">
-            var date = new Date(),
-                current_hour = date.getHours(),
-                word = '';
-
-            if (current_hour >= 0 && current_hour <= 11) {
-                word = "Guten Morgen";
-            } else if (current_hour >= 12 && current_hour <= 17) {
-                word = "Guten Tag";
-            } else if (current_hour >= 18 && current_hour <= 23) {
-                word = "Guten Abend";
-            }
-
-            document.getElementById("js-greeting-word").textContent = word;
-        </script>
-
         <script language="javascript">
             document.getElementById('loginform').username.focus();
         </script>

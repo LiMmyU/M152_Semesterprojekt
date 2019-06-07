@@ -22,7 +22,6 @@
 
             <form class="content-box__content" action="" method="POST" id="loginform">  
                 <div class="login__header">
-                    <!--<h1 id="js-greeting-word">Hallo</h1>-->
                     <h2>Anmelden </h2>
                 </div>
                 <ul class="form-fields">
@@ -53,25 +52,9 @@
            </form>
 
         </div>
-        <script type="text/javascript">
-            var date = new Date(),
-                current_hour = date.getHours(),
-                word = '';
-
-            if (current_hour >= 0 && current_hour <= 11) {
-                word = "Guten Morgen";
-            } else if (current_hour >= 12 && current_hour <= 17) {
-                word = "Guten Tag";
-            } else if (current_hour >= 18 && current_hour <= 23) {
-                word = "Guten Abend";
-            }
-
-            document.getElementById("js-greeting-word").textContent = word;
-        </script>
-
         <script language="javascript">
-            document.getElementById('loginform').username.focus();
-        </script>
+                document.getElementById('loginform').username.focus();
+            </script>
     </div>
 </body>
 
