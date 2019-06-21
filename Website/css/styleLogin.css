@@ -132,8 +132,6 @@ form {
 /* style inputs and link buttons */
 
 .container {
-  border-radius: 5px;
-  border-style: solid;
   margin-left: 23%;
   margin-right: 23%;
   background-color: #f2f2f2;
@@ -179,5 +177,6 @@ input, .btn {
   }
   body, .form-fields {
     padding: 0%;
+    padding-left: 0%
   }
 }

@@ -10,7 +10,7 @@
 
 <body>
     <div class="header">
-        <a href="#default" class="logo">Ya! SaLi Reiseblog</a>
+            <a href="../index.html" class="logo"><img src="../img/YaSaLi.svg" alt="YaSaLi logo" height="80px" width="80px"/></a>
         <div class="header-right">
             <a href="../index.html">Home</a>
             <a class="active" href="#login">Login</a>
@@ -20,13 +20,13 @@
     <div class="container">
         <div class="content-box mb1">
 
-            <form class="content-box__content" action="" method="POST" id="loginform">  
+            <form class="content-box__content" action="" method="POST" id="loginform">
                 <div class="login__header">
                     <h2>Anmelden </h2>
                 </div>
                 <ul class="form-fields">
                     <li>
-                        <label class="label" for="username">Name:</label>
+                        <label class="label" for="username">Name: </label>
                         <input tabindex="1" type="text" id="username" name="username" required>
                     </li>
                     <li>
@@ -34,8 +34,9 @@
                         <input tabindex="2" type="password" id="password" name="password" maxlength="50" required>
                     </li>
                     <li>
-                        <button tabindex="3" type="submit" value="Login"><span>Login</span></button>                       
-                        <button tabindex="5" type="button" onclick="window.location.href='register.html'"><span>Registrieren</span></button>
+                        <button tabindex="3" type="submit" value="Login"><span>Login</span></button>
+                        <button tabindex="5" type="button"
+                            onclick="window.location.href='register.html'"><span>Registrieren</span></button>
                     </li>
                     <li><span>oder</span></li>
                     <li>
@@ -49,12 +50,12 @@
                         </div>
                     </li>
                 </ul>
-           </form>
+            </form>
 
         </div>
         <script language="javascript">
-                document.getElementById('loginform').username.focus();
-            </script>
+            document.getElementById('loginform').username.focus();
+        </script>
     </div>
 </body>
 
